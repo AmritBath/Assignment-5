@@ -10,6 +10,8 @@
 #define CYAN    "\033[36m"
 #define WHITE   "\033[37m"
 #define TEAL    "\033[30m"
+#define SOFTPINK "\033[38;5;217m" 
+#define SOFTPURPLE "\033[38;5;104m"
 
 Nucleus::Nucleus(std::string t, int am, int an)
     : type(t), atomic_mass(am), atomic_number(an), decayed(false), emitted_photon(nullptr) {}
@@ -56,7 +58,7 @@ void Nucleus::printData() const {
 StableNucleus::StableNucleus(std::string t, int am, int an)
     : Nucleus(t, am, an) {}
 void StableNucleus::decay(std::vector<std::shared_ptr<Photon>>& photon_log) {
-    std::cout << "Stable nucleus (" << type << ") cannot decay.\n";
+    std::cout << CYAN << "Stable nucleus (" << type << ") cannot decay.\n";
 }
 
 RadioactiveNucleus::RadioactiveNucleus(std::string t, int am, int an, double hl, std::vector<double> de)
@@ -68,7 +70,7 @@ RadioactiveNucleus::RadioactiveNucleus(std::string t, int am, int an, double hl,
             return;
         }
     
-        std::cout << CYAN << "Decay of " << type << ":\n" << RESET;
+        std::cout << CYAN << "Decay of " << type << ":\n" << SOFTPURPLE;
     
         for (double e : decay_energies) {
             emitted_photon = std::make_shared<Photon>(e);
@@ -79,13 +81,13 @@ RadioactiveNucleus::RadioactiveNucleus(std::string t, int am, int an, double hl,
     
         if (type == "Na") {
             auto positron = std::make_shared<Positron>(511.0);
-            std::cout << MAGENTA << "  Positron emission from Na detected.\n";
+            std::cout << SOFTPINK << "  Positron emission from Na detected.\n";
             std::cout << "  ";
             positron->printData();
     
             auto annihilation_photon1 = std::make_shared<Photon>(511.0);
             auto annihilation_photon2 = std::make_shared<Photon>(511.0);
-            std::cout << "  Positron annihilated with electron:\n";
+            std::cout << "  Positron annihilated with electron:\n" << SOFTPURPLE;
             std::cout << "    ";
             annihilation_photon1->printData();
             std::cout << "    ";

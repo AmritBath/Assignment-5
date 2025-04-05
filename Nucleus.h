@@ -63,10 +63,13 @@ public:
   void decay(std::vector<std::shared_ptr<Photon>>& photon_log,
                int& annihilation_photon_count) override;
 
-  double getHalfLife() const 
-  { return half_life; 
+  double get_half_life() const 
+  { 
+    return half_life; 
 }
-  const std::vector<double>& getDecayEnergies() const {
+
+  const std::vector<double>& get_decay_energies() const 
+  {
      return decay_energies; 
     }
 };

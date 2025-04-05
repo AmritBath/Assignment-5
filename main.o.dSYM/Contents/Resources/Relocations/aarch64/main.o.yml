@@ -206,7 +206,7 @@ relocations:
   - { offset: 0xD131, size: 0x8, addend: 0x0, symName: __ZL18__gthread_active_pv, symObjAddr: 0xA4, symBinAddr: 0x1000032BC, symSize: 0x8 }
   - { offset: 0xD14C, size: 0x8, addend: 0x0, symName: __ZNKSt9type_infoeqERKS_, symObjAddr: 0x30, symBinAddr: 0x100003248, symSize: 0x74 }
   - { offset: 0xD187, size: 0x8, addend: 0x0, symName: __ZdlPvS_, symObjAddr: 0x18, symBinAddr: 0x100003230, symSize: 0x18 }
-  - { offset: 0x164F7, size: 0x8, addend: 0x0, symName: __ZStL8__ioinit, symObjAddr: 0x44461, symBinAddr: 0x100020002, symSize: 0x0 }
+  - { offset: 0x164F7, size: 0x8, addend: 0x0, symName: __ZStL8__ioinit, symObjAddr: 0x44469, symBinAddr: 0x100020002, symSize: 0x0 }
   - { offset: 0x16FEC, size: 0x8, addend: 0x0, symName: __GLOBAL__sub_I_Nucleus.cpp, symObjAddr: 0x46A8, symBinAddr: 0x100007A70, symSize: 0x1C }
   - { offset: 0x17007, size: 0x8, addend: 0x0, symName: __ZN9__gnu_cxx13new_allocatorI6PhotonE7destroyIS1_EEvPT_, symObjAddr: 0x3F70, symBinAddr: 0x1000079E0, symSize: 0x30 }
   - { offset: 0x17043, size: 0x8, addend: 0x0, symName: __ZNSt14_Sp_ebo_helperILi0ESaI6PhotonELb1EE6_S_getERS2_, symObjAddr: 0x3F5C, symBinAddr: 0x1000079CC, symSize: 0x14 }
@@ -435,12 +435,12 @@ relocations:
   - { offset: 0x1E447, size: 0x8, addend: 0x0, symName: __ZNSt6vectorISt10shared_ptrI8ElectronESaIS2_EE9push_backERKS2_, symObjAddr: 0x2B8, symBinAddr: 0x100007CF0, symSize: 0x80 }
   - { offset: 0x1E4A1, size: 0x8, addend: 0x0, symName: __ZNSt6vectorISt10shared_ptrI8ElectronESaIS2_EED1Ev, symObjAddr: 0x268, symBinAddr: 0x100007CA0, symSize: 0x50 }
   - { offset: 0x1E4C5, size: 0x8, addend: 0x0, symName: __ZNK6Photon10print_dataEv, symObjAddr: 0x17C, symBinAddr: 0x100007C4C, symSize: 0x54 }
-  - { offset: 0x1E4ED, size: 0x8, addend: 0x0, symName: __ZNK6Photon12getElectronsEv, symObjAddr: 0x164, symBinAddr: 0x100007C34, symSize: 0x18 }
+  - { offset: 0x1E4ED, size: 0x8, addend: 0x0, symName: __ZNK6Photon13get_electronsEv, symObjAddr: 0x164, symBinAddr: 0x100007C34, symSize: 0x18 }
   - { offset: 0x1E515, size: 0x8, addend: 0x0, symName: __ZN6Photon12add_electronESt10shared_ptrI8ElectronE, symObjAddr: 0x138, symBinAddr: 0x100007C08, symSize: 0x2C }
   - { offset: 0x1E573, size: 0x8, addend: 0x0, symName: __ZN6PhotonC1Ed, symObjAddr: 0xF0, symBinAddr: 0x100007BC0, symSize: 0x48 }
   - { offset: 0x1E5A3, size: 0x8, addend: 0x0, symName: __ZN6PhotonC2Ed, symObjAddr: 0xA8, symBinAddr: 0x100007B78, symSize: 0x48 }
   - { offset: 0x1E5D4, size: 0x8, addend: 0x0, symName: __ZL18__gthread_active_pv, symObjAddr: 0x18, symBinAddr: 0x100007B70, symSize: 0x8 }
-  - { offset: 0x2B25B, size: 0x8, addend: 0x0, symName: __ZStL8__ioinit, symObjAddr: 0x807A2, symBinAddr: 0x100020004, symSize: 0x0 }
+  - { offset: 0x2B25B, size: 0x8, addend: 0x0, symName: __ZStL8__ioinit, symObjAddr: 0x807B2, symBinAddr: 0x100020004, symSize: 0x0 }
   - { offset: 0x2BD46, size: 0x8, addend: 0x0, symName: __GLOBAL__sub_I_main.cpp, symObjAddr: 0x8080, symBinAddr: 0x10000DEA8, symSize: 0x1C }
   - { offset: 0x2BD61, size: 0x8, addend: 0x0, symName: __ZN9__gnu_cxx13new_allocatorI18RadioactiveNucleusE7destroyIS1_EEvPT_, symObjAddr: 0x77A0, symBinAddr: 0x10000DE18, symSize: 0x30 }
   - { offset: 0x2BD9D, size: 0x8, addend: 0x0, symName: __ZNSt14_Sp_ebo_helperILi0ESaI18RadioactiveNucleusELb1EE6_S_getERS2_, symObjAddr: 0x778C, symBinAddr: 0x10000DE04, symSize: 0x14 }
@@ -751,8 +751,8 @@ relocations:
   - { offset: 0x3188F, size: 0x8, addend: 0x0, symName: __ZNSt6vectorISt10shared_ptrI7NucleusESaIS2_EEC1Ev, symObjAddr: 0x168, symBinAddr: 0x1000086F0, symSize: 0x20 }
   - { offset: 0x318CC, size: 0x8, addend: 0x0, symName: __ZNSt12_Vector_baseISt10shared_ptrI7NucleusESaIS2_EEC2Ev, symObjAddr: 0x148, symBinAddr: 0x1000086D0, symSize: 0x20 }
   - { offset: 0x31914, size: 0x8, addend: 0x0, symName: __ZNSt12_Vector_baseISt10shared_ptrI7NucleusESaIS2_EE12_Vector_implD1Ev, symObjAddr: 0x128, symBinAddr: 0x1000086B0, symSize: 0x20 }
-  - { offset: 0x31938, size: 0x8, addend: 0x0, symName: __ZNK18RadioactiveNucleus16getDecayEnergiesEv, symObjAddr: 0x110, symBinAddr: 0x100008698, symSize: 0x18 }
-  - { offset: 0x31960, size: 0x8, addend: 0x0, symName: __ZNK18RadioactiveNucleus11getHalfLifeEv, symObjAddr: 0xF8, symBinAddr: 0x100008680, symSize: 0x18 }
+  - { offset: 0x31938, size: 0x8, addend: 0x0, symName: __ZNK18RadioactiveNucleus18get_decay_energiesEv, symObjAddr: 0x110, symBinAddr: 0x100008698, symSize: 0x18 }
+  - { offset: 0x31960, size: 0x8, addend: 0x0, symName: __ZNK18RadioactiveNucleus13get_half_lifeEv, symObjAddr: 0xF8, symBinAddr: 0x100008680, symSize: 0x18 }
   - { offset: 0x3198D, size: 0x8, addend: 0x0, symName: __ZL18__gthread_active_pv, symObjAddr: 0xE4, symBinAddr: 0x100008678, symSize: 0x8 }
   - { offset: 0x319A4, size: 0x8, addend: 0x0, symName: __ZNSt11char_traitsIcE6lengthEPKc, symObjAddr: 0xA4, symBinAddr: 0x100008638, symSize: 0x40 }
 ...

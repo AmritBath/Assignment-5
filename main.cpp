@@ -60,8 +60,8 @@ int main()
 
     if(auto r = std::dynamic_pointer_cast<RadioactiveNucleus>(nucleus))
     {
-      cout << "  Half-life: " << r->getHalfLife() << " years\n";
-      const auto& energies = r->getDecayEnergies();
+      cout << "  Half-life: " << r->get_half_life() << " years\n";
+      const auto& energies = r->get_decay_energies();
       for(const auto& e : energies)
       {
         cout << "  Decay photon: " << e << " keV\n";

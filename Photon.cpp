@@ -22,7 +22,7 @@ void Photon::add_electron(std::shared_ptr<Electron> e)
 }
 
 // Return reference to vector of associated electrons
-const std::vector<std::shared_ptr<Electron>>& Photon::getElectrons() const
+const std::vector<std::shared_ptr<Electron>>& Photon::get_electrons() const
 {
   return electrons;
 }

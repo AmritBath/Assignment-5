@@ -24,7 +24,7 @@ private:
 public:
   Photon(double e);
   void add_electron(std::shared_ptr<Electron> e);
-  const std::vector<std::shared_ptr<Electron>>& getElectrons() const;
+  const std::vector<std::shared_ptr<Electron>>& get_electrons() const;
 
   void print_data() const override;
 

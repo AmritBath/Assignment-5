@@ -1,15 +1,56 @@
-This is the template for the fifth assignment - note that we don't have a template anymore, to prepare you for the final project. 
+# Assignment 5 – PHYS30762: Object-Oriented Programming in C++
 
-# Notes
+## Overview
+This project simulates radioactive decays and particle interactions using object-oriented design in C++. It includes multiple inheritance hierarchies and models physical processes such as photon emission, Compton scattering, photoelectric effect, pair production, and positron emission.
 
-The template is prepared to have everything in a single file, since splitting in interface and implementation gives challenge marks and the students should be using elements from the pre-lecture to make that compile (tip: remember also include guards like #IFNDEF to avoid including the headers too many times). 
+## Features Implemented
+- **Nucleus class hierarchy**: Base `Nucleus` class with `StableNucleus` and `RadioactiveNucleus` derived types
+- **Particle class hierarchy**: Base `Particle` class with `Photon`, `Electron`, and extended `Positron` class
+- **Decay logic**: Simulates radioactive decay and photon emission based on energy values
+- **Photon interactions**:
+  - Photoelectric effect
+  - Compton scattering (with angle input)
+  - Pair production (valid and invalid cases)
+- **Electron behaviour**: Electrons can store and radiate photons
+- **Positron emission**: Triggered specifically during Sodium (Na) decay
+- **Smart pointers** used throughout to manage memory safely
+- **Rule of Five** implemented in `Nucleus` class
+- **Well-structured console output** for simulation traceability
 
-# Tips on compilation 
+## Optional Enhancements Added
+- ✅ Positron emission from Sodium decay
+- ✅ Rule of Five in base class `Nucleus`
+- ✅ Comprehensive simulation summary block
+- ✅ Consistent output format with clear section headers
+- ✅ Structured output for photon emissions per nucleus
+- ✅ Labelled particle output for better readability
 
-If you want to use the same line that the demonstrators will use, print this in your terminal. 
+## Compilation & Execution
+Ensure you are using a C++17 compatible compiler. Then:
 
-`g++-11 -g myFirstClass.cpp mySecondClass.cpp myThirdClass.cpp myMain.cpp -o assignment-5.o -std=gnu++17`
+```bash
+make
+./main.o
+```
 
-The std=gnu++17 makes sure that the compiler you're using locally (which you should have installed following the instructions on the Quickstart guide on Blackboard/Git) picks up the same version of the C++ standards as the computers in the lab. Note:do not use g++ on Mac, or you'll get clang. 
+## Example Output Snippet
+```
+--- Nucleus Decay ---
+[Photon] Energy: 1274.5 keV
+Positron emission from Na detected.
+[Positron] Energy: 511 keV
+Nucleus (Na) | A: 23, Z: 11 | Status: Decayed
+...
+```
 
-You have to substitute the myFirstClass etc with the names of your cpp files. Also include the line that you use for compiling in a text file (e.g. called README) in your submission. 
+## File Structure
+- `main.cpp`: Simulation logic
+- `Nucleus.h/.cpp`: Class hierarchy and decay logic
+- `Particle.h`: Abstract base for particles
+- `Photon.h/.cpp`: Photon behaviour
+- `Electron.h/.cpp`: Electron behaviour
+- `Positron.h`: Lightweight positron class
+- `Interactions.h/.cpp`: Physical interaction implementations
+
+## Author Notes
+This project aims to simulate nuclear decay processes while demonstrating mastery of object-oriented programming in C++. Beyond fulfilling the brief, it showcases best practices such as encapsulation, dynamic memory management, and modular design.
